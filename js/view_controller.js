@@ -23,7 +23,6 @@ function getInput() {
 }
 
 
-
 /***  Business-Logic */ 
 //3. Modul: Business-Logic (Mapping) | Test:
 // output(checkAge(2));
