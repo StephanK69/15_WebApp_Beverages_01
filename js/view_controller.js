@@ -11,15 +11,26 @@
 
 /***  Ablaufsteuerung | Control */  
 // 5. Modul Ablaufsteuerung | Test:
-controller()
+// controller()
 function controller() {
   output(updateImg(checkAge(getInput()))) 
 }
 
+// 5a. Trigger - BtnClick 
+const btn = document.getElementById("trigBtn");
+btn.addEventListener("click",actOnClick);
+
+// 5b. Event-Dispatcher
+function actOnClick() {
+    controller();
+}
+
+
 /***  Eingabe | Check auf Datenintegrität */  
 //4. Modul: Eingabe
 function getInput() {
-    return 15;
+    const field = document.getElementsByName("eingabe")[0];
+    return parseInt(field.value);
 }
 
 
