@@ -13,9 +13,14 @@
 // 5. Modul Ablaufsteuerung | Test:
 controller()
 function controller() {
-  output(updateImg(checkAge(10))) 
+  output(updateImg(checkAge(getInput()))) 
 }
 
+/***  Eingabe | Check auf Datenintegrität */  
+//4. Modul: Eingabe
+function getInput() {
+    return 15;
+}
 
 
 
