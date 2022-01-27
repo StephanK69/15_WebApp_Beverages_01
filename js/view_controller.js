@@ -10,15 +10,23 @@
 */
 
 /***  Ablaufsteuerung | Control */  
+// 5. Modul Ablaufsteuerung | Test:
+controller()
+function controller() {
+  output(updateImg(checkAge(10))) 
+}
+
+
+
 
 /***  Business-Logic */ 
 //3. Modul: Business-Logic (Mapping) | Test:
-output(checkAge(2));
-output(checkAge(7));
-output(checkAge(13));
-output(checkAge(18));
-output(checkAge(99));
-output(checkAge(135));
+// output(checkAge(2));
+// output(checkAge(7));
+// output(checkAge(13));
+// output(checkAge(18));
+// output(checkAge(99));
+// output(checkAge(135));
 function checkAge(age) {
     switch (true) {
         case (age >= 0) && (age <= 5) :
