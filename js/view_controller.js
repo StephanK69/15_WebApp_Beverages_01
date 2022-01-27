@@ -2,9 +2,9 @@
 /* View- Controller */
 
 /* Der Plan
-    Einlesen Daten von Webseite :: 
-	Check Daten :: 
-    Btn. Trigger :: 
+    Einlesen Daten von Webseite :: check!
+	Check Daten :: check!
+    Btn. Trigger :: check!
     Business-Logic (Alter --> Getränk) :: check!
     Bild austauschen :: check!
 */
@@ -22,9 +22,12 @@ btn.addEventListener("click",actOnClick);
 
 // 5b. Event-Dispatcher
 function actOnClick() {
-    controller();
+    if (isInputValid()) {
+        controller();
+    } else {
+        output("Input nicht korrekt!")
+    }
 }
-
 
 /***  Eingabe | Check auf Datenintegrität */  
 
@@ -51,12 +54,8 @@ function isInputValid() {
         updateImg(data.default.bev);
     }
    
-    return true;
+    return cond;
 }
-
-
-
-
 
 /***  Business-Logic */ 
 //3. Modul: Business-Logic (Mapping) | Test:
